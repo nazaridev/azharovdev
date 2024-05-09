@@ -79,7 +79,6 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [scroll, setScroll] = useState(false)
   const pathname = usePathname()
-  const ref = useRef()
 
   const onHandleOpenNav = () => {
     setOpen(prev => !prev)

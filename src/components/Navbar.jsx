@@ -148,7 +148,7 @@ export default function Navbar() {
           <motion.div className='w-screen h-screen bg-black absolute left-0 top-0 flex flex-col justify-center items-center gap-y-8' variants={variantNav} initial="close" animate="open" >
             {
               links.map(link => (
-                <motion.div variants={variantNavItem}>
+                <motion.div variants={variantNavItem} key={link.title}>
                   <Link className='text-white text-4xl' href={link.path} key={link.title} onClick={onHandleOpenNav}>{link.title}</Link>
                 </motion.div>
               ))
